@@ -1,0 +1,10 @@
+.pagination {
+  display: none;
+  &.active{
+    display: block;
+  }
+}
+
+.pageDetails {
+  cursor: pointer;
+}

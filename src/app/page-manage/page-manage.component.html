@@ -1,0 +1,15 @@
+<button (click)="prevPage()">Prev</button>
+<button (click)="nextPage()">Next</button>
+
+<div class="pagination-container">
+  <div (click)="toggle()" class="pageDetails">
+    <span>{{ pageNumber }}</span
+      ><span>-</span><span>{{ pageSize }}</span>
+  </div>
+  <ul [ngClass]="{active: isActive}" class="pagination">
+    <li (click)="setPageSize(10)">10</li>
+    <li (click)="setPageSize(20)">20</li>
+    <li (click)="setPageSize(30)">50</li>
+    <li (click)="setPageSize(40)">100</li>
+  </ul>
+</div>
